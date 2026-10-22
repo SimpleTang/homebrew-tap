@@ -14,7 +14,9 @@ class Aibox < Formula
     # Image builds stage a context from the .dockerignore allowlist, so keep that dotfile too.
     libexec.install Dir["*"], ".dockerignore"
     bin.install_symlink libexec/"ai-box" => "aibox"
-    bash_completion.install libexec/"ai-box-completion.sh" => "aibox"
+    # install_symlink, not install: install would move the script out of libexec, and zsh users
+    # (and `aibox setup`) source it from opt/aibox/libexec.
+    bash_completion.install_symlink libexec/"ai-box-completion.sh" => "aibox"
   end
 
   def caveats
