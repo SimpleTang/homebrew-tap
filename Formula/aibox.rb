@@ -1,8 +1,8 @@
 class Aibox < Formula
   desc "Run Claude Code and Codex CLI in Apple container sandboxes on macOS"
   homepage "https://github.com/SimpleTang/ai-sandbox"
-  url "https://github.com/SimpleTang/ai-sandbox/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "8d4f100fc6c90fcf94dc8a4203cb94ced80dd5b4db2dd6085b0a976b703fed71"
+  url "https://github.com/SimpleTang/ai-sandbox/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "9eb604e98baf1a796ebb8323a84f74276a818edd50b6ef0f69b4126557983761"
   license "MIT"
 
   # Apple container is not declared as a dependency on purpose: `aibox setup` installs the
